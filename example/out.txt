@@ -1,0 +1,6 @@
+Path: /var/cache/apt/archives/texlive-luatex_2019.20200218-1_all.deb
+Size:  10.00 MiB
+Reading speed: 769.50 MiB/s
+
+Size:  1024.00 MiB
+Writing speed: 111.74 MiB/s
