@@ -23,7 +23,7 @@ object Parameters: Arkenv("hard-disk-benchmark") {
     }
 
     val directory: String? by argument("--dir", "-d") {
-        description = "The directory from which a random file will be selected"
+        description = "The directory from which a random file for a reading benchmark will be selected"
         validate("Must exist") { File(it).isDirectory }
     }
 
@@ -34,7 +34,7 @@ object Parameters: Arkenv("hard-disk-benchmark") {
     }
 
     val upperBound: Int by argument("--upper", "-u") {
-        description = "The upper bound of MiB for a random file. "
+        description = "The upper bound of MiB for a random file"
         validate("Must be <= 2 * 1024") { it <= 2 * 1024 }
         defaultValue = { 2 * 1024 }
     }
