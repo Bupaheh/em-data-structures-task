@@ -35,9 +35,6 @@ fun readingSpeedBenchmark(filePath: String): BenchmarkResults {
     val timeSeconds = (timeMillis.toDouble() / 1000)
     val speed = fileSize / timeSeconds
 
-    // to ensure that the file is read
-    println("Ignore: ${data.hashCode()}\n")
-
     return BenchmarkResults(filePath, fileSize, speed)
 }
 
